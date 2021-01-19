@@ -38,6 +38,8 @@ function createProduct() {
   let newProduct=product.cloneNode(true);
   newProduct.querySelector(".name span").innerText=document.getElementById("newName").value;
   newProduct.querySelector(".price span").innerText=document.getElementById("newPrice").value;
+  newProduct.querySelector(".subtotal span").innerText=0;
+  newProduct.querySelector(".quantity input").value=0;
   document.getElementById("newName").value="";
   document.getElementById("newPrice").value=0;
   document.querySelector("tbody").appendChild(newProduct)
