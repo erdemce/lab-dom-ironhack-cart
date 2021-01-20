@@ -43,7 +43,7 @@ function createProduct() {
   document.getElementById("newName").value="";
   document.getElementById("newPrice").value=0;
   document.querySelector("tbody").appendChild(newProduct)
-
+  let removeButton=newProduct.querySelector(".btn-remove").addEventListener("click",removeProduct)
 }
 
 window.addEventListener('load', () => {
